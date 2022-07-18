@@ -138,7 +138,14 @@
                 <div class="col-md-6">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <form id="contactform" class="row" action="contact.php" name="pommells" method="post" netlify>
+                        
+                        <form name="pommells" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                            <div hidden aria-hidden="true">
+                                <label>
+                                  Don’t fill this out if you're human: 
+                                  <input name="bot-field" />
+                                </label>
+                              </div>
                             <fieldset class="row-fluid">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name">
@@ -167,7 +174,7 @@
                                     <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Give us more details.."></textarea>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
-                                    <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Get a Quote</button>
+                                    <button type="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Get a Quote</button>
                                 </div>
                             </fieldset>
                         </form>
