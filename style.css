@@ -56,6 +56,10 @@ body {
 body.demos .section {
     background: url(images/bg.png) repeat top center #f2f3f5;
 }
+.blogimg {
+    width:2em; 
+    height:14em;
+  }
 
 body.demos .section-title img {
     max-width: 280px;
